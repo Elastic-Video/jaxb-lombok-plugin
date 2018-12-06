@@ -38,7 +38,7 @@ public class LombokPlugin extends Plugin  {
             public void editGeneratedClass(JDefinedClass generatedClass) {
                 generatedClass.annotate(NoArgsConstructor.class);
                 generatedClass.annotate(AllArgsConstructor.class);
-                generatedClass.annotate(Builder.class).param("builderMethodName", "builderFor" + generatedClass.name());
+                generatedClass.annotate(Builder.class);
             }
         });
 
